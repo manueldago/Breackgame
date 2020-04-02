@@ -388,7 +388,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
             this.Name = "GameFrm";
-            this.Text = "GameFrm";
             this.Load += new System.EventHandler(this.GameFrm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameFrm_KeyDown);
             this.containerGame.ResumeLayout(false);

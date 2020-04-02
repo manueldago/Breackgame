@@ -17,11 +17,18 @@ namespace Breackgame
         public GameFrm()
         {
             InitializeComponent();
+            SetCaptionFormTitle();
             Setting.LoadDefaultSettings();
             Setting.LoadGameFormControls(this);
 
         }
-     
+
+        private void SetCaptionFormTitle() {
+
+            string msg = string.Format("Breackgame                                                    Version({0})", Application.ProductVersion);
+            this.Text = msg;
+        }
+
         private void GameFrm_Load(object sender, EventArgs e)
         {
             KineticBall game = new KineticBall();
